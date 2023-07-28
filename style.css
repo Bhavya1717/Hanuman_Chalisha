@@ -1,0 +1,92 @@
+body {
+    background-color: whitesmoke;
+}
+
+.book {
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page {
+    background-image: url(./Blank_Page.jpg);
+    position: absolute;
+    height: 284px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    transition: transform 1s ease;
+    transform-origin: center top;
+    backface-visibility: visible;
+    /* Initially set backface-visibility to visible */
+    word-spacing: 2px;
+}
+
+.page_2 {
+    background-image: url(./page_1.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 100;
+}
+
+.page_1 {
+    z-index: 99;
+}
+
+.page_3 {
+    z-index: 98;
+}
+
+.page_4 {
+    z-index: 97;
+}
+
+.page_5 {
+    z-index: 96;
+}
+
+.page_6 {
+    z-index: 95;
+}
+
+.page_7 {
+    z-index: 94;
+}
+
+.page_8 {
+    z-index: 93;
+}
+
+.page_9 {
+    z-index: 92;
+}
+
+.page_10 {
+    z-index: 91;
+}
+
+.page_11 {
+    z-index: 90;
+}
+
+.page_12 {
+    z-index: 89;
+}
+
+.page_13 {
+    z-index: 88;
+}
+
+.info {
+    text-align: center;
+}
+
+.page.flip {
+    transform: rotateX(180deg);
+}
