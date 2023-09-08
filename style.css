@@ -1,14 +1,14 @@
 body {
     background-color: whitesmoke;
-    font-family: 'rasa','sans-serif';
+    font-family: 'rasa', sans-serif;
     font-weight: inherit;
-    font-size: 25px;
+    font-size: 5vw; /* Responsive font size */
 }
 
 .book {
     position: absolute;
-    height: 408px;
-    width: 572px;
+    height: 60vw; /* Responsive height */
+    width: 85vw; /* Responsive width */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -17,8 +17,8 @@ body {
 .page {
     background-image: url(./Blank_Page.jpg);
     position: absolute;
-    height: 408px;
-    width: 572px;
+    height: 60vw; /* Responsive height */
+    width: 85vw; /* Responsive width */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,8 +26,23 @@ body {
     transition: transform 1s ease;
     transform-origin: center top;
     backface-visibility: visible;
-    /* Initially set backface-visibility to visible */
     word-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 8vw;
+    }
+
+    .book {
+        height: 80vw;
+        width: 90vw;
+    }
+
+    .page {
+        height: 80vw;
+        width: 90vw;
+    }
 }
 
 .page_2 {
