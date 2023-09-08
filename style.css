@@ -1,11 +1,14 @@
 body {
     background-color: whitesmoke;
+    font-family: 'rasa','sans-serif';
+    font-weight: inherit;
+    font-size: 25px;
 }
 
 .book {
     position: absolute;
-    height: 300px;
-    width: 400px;
+    height: 408px;
+    width: 572px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -14,8 +17,8 @@ body {
 .page {
     background-image: url(./Blank_Page.jpg);
     position: absolute;
-    height: 284px;
-    width: 400px;
+    height: 408px;
+    width: 572px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,6 +84,18 @@ body {
 
 .page_13 {
     z-index: 88;
+}
+
+.page_14 {
+    z-index: 87;
+}
+
+.page_15 {
+    z-index: 86;
+}
+
+.page_16 {
+    z-index: 85;
 }
 
 .info {
